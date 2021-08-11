@@ -1,0 +1,23 @@
+
+
+# Dracula skin
+import:
+   - /home/relow/.config/alacritty/dracula.yml
+#Padding
+padding:
+    x: 2
+    y: 2
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    family: monospace
+    style: Regular
+  size: 14.0
+
+
+
+# The value `0.0` is completely transparent and `1.0` is opaque.
+background_opacity: 0.90
+
