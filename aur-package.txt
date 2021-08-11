@@ -1,0 +1,7 @@
+brave-bin
+kazam
+mocicon
+pfetch
+sddm-sugar-candy-git
+tty-clock
+yay
