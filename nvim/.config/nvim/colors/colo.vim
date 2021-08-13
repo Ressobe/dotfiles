@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/relow/wallpapers/wallpaper.jpg"
+let background = "#030415"
+let foreground = "#c2a2bc"
+let cursor     = "#c2a2bc"
+
+" Colors
+let color0  = "#030415"
+let color1  = "#99352B"
+let color2  = "#8F3B72"
+let color3  = "#AE496D"
+let color4  = "#CF645C"
+let color5  = "#633783"
+let color6  = "#365393"
+let color7  = "#c2a2bc"
+let color8  = "#877183"
+let color9  = "#99352B"
+let color10 = "#8F3B72"
+let color11 = "#AE496D"
+let color12 = "#CF645C"
+let color13 = "#633783"
+let color14 = "#365393"
+let color15 = "#c2a2bc"

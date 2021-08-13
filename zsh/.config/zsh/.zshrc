@@ -1,8 +1,9 @@
 ###
-
 # plugins
 source ~/.config/zsh/plugins/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/.zsh/zsh-completions/zsh-completions.plugin.zsh
+# pywal colors
+cat /home/relow/.cache/wal/sequences
 # automatically cd into typed directory
 setopt autocd	
 
@@ -27,8 +28,10 @@ alias update-dmenu="cd $HOME/.config/suckless/dmenu && sudo rm config.h && sudo 
 # vim mode
 bindkey -v
 
-# history file location
-HISTFILE=~/.cache/zsh/history
-
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
 # run pfetch when start zsh
 pfetch
+

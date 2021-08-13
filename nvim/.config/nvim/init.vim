@@ -11,24 +11,26 @@ call plug#begin('~/.config/nvim/autoload/plugged') "Install Plugins
      Plug 'mhinz/vim-startify'               "Start screen
      Plug 'dracula/vim', { 'as': 'dracula' } "Dracula theme
      Plug 'vim-airline/vim-airline'          "Status line
-     Plug 'vim-airline/vim-airline-themes'   "Status line themes    
+     "Plug 'vim-airline/vim-airline-themes'   "Status line themes    
+     Plug 'dylanaraps/wal.vim'               "Pywal theme
+     "Plug 'NLKNguyen/papercolor-theme'
+     
 call plug#end()
 "Settings
-
-colorscheme dracula         "color theme
-set cursorline              "Enable highlighting of the current line 
+set background=dark         "Background
+colorscheme wal     "Color theme
+"set cursorline              "Enable highlighting of the current line 
 set relativenumber          "Line numbers type
-set termguicolors           "Terminal colors
 set clipboard=unnamedplus   "Copy between vim
-set showtabline=2           "Tabs
+"set showtabline=2           "Tabs
 set mouse=a                 "Enable mouse
 set formatoptions-=cro      "Stop newline continution of comments
 let mapleader=" "           "Space my mapleader key
 
 "Status line configuration
-let g:airline#extensions#tabline#enabled =1 "Enable tabline
-let g:airline_powerline_fonts = 1 "Enable powerline fonts
-let g:airline_theme = 'dracula' "Colors
+"let g:airline#extensions#tabline#enabled =1 "Enable tabline
+"let g:airline_powerline_fonts = 1 "Enable powerline fonts
+"let g:airline_theme = 'dracula' "Colors
 "
 "Startify config
 let g:startify_custom_header = [
@@ -46,6 +48,7 @@ let g:startify_bookmarks = [
         \ { 'd': '~/.config/suckless/dwm/config.def.h' },
         \ { 's': '~/.config/suckless/slstatus/config.def.h' },
         \ { 'n': '~/.config/nvim/init.vim' },
+        \ { 'a': '~/.config/alacritty/alacritty.yml' },
         \]
 let g:startify_lists = [
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
