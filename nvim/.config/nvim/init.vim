@@ -14,9 +14,11 @@ call plug#begin('~/.config/nvim/autoload/plugged') "Install Plugins
      "Plug 'vim-airline/vim-airline-themes'   "Status line themes    
      Plug 'dylanaraps/wal.vim'               "Pywal theme
      "Plug 'NLKNguyen/papercolor-theme'
-     
+     Plug 'ryanoasis/vim-devicons'           "Icons
 call plug#end()
 "Settings
+
+set encoding=UTF-8          "Enable icons
 set background=dark         "Background
 colorscheme wal     "Color theme
 "set cursorline              "Enable highlighting of the current line 
@@ -34,14 +36,14 @@ let mapleader=" "           "Space my mapleader key
 "
 "Startify config
 let g:startify_custom_header = [
-         \ ' _      _ _______  _______          _________ _______ ',
-         \ '( (    /|(  ____ \(  ___  )|\     /|\__   __/(       )',
-         \ '|  \  ( || (    \/| (   ) || )   ( |   ) (   | () () |',
-         \ '|   \ | || (__    | |   | || |   | |   | |   | || || |',
-         \ '| (\ \) ||  __)   | |   | |( (   ) )   | |   | |(_)| |',
-         \ '| | \   || (      | |   | | \ \_/ /    | |   | |   | |',
-         \ '| )  \  || (____/\| (___) |  \   /  ___) (___| )   ( |',
-         \ '|/    )_)(_______/(_______)   \_/   \_______/|/     \|',
+         \ '   _      _ _______  _______          _________ _______ ',
+         \ '  ( (    /|(  ____ \(  ___  )|\     /|\__   __/(       )',
+         \ '  |  \  ( || (    \/| (   ) || )   ( |   ) (   | () () |',
+         \ '  |   \ | || (__    | |   | || |   | |   | |   | || || |',
+         \ '  | (\ \) ||  __)   | |   | |( (   ) )   | |   | |(_)| |',
+         \ '  | | \   || (      | |   | | \ \_/ /    | |   | |   | |',
+         \ '  | )  \  || (____/\| (___) |  \   /  ___) (___| )   ( |',
+         \ '  |/    )_)(_______/(_______)   \_/   \_______/|/     \|',
          \]
 let g:startify_bookmarks = [
         \ { 'z': '~/.config/zsh/.zshrc' },

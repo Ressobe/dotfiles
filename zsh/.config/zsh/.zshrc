@@ -1,9 +1,12 @@
 ###
+
 # plugins
 source ~/.config/zsh/plugins/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/.zsh/zsh-completions/zsh-completions.plugin.zsh
+
 # pywal colors
 cat /home/relow/.cache/wal/sequences
+
 # automatically cd into typed directory
 setopt autocd	
 
@@ -18,20 +21,24 @@ alias ls="lsd -h"
 alias ll="lsd -ahl"
 alias n="nvim"
 alias c="clear"
-
+alias cp="cp -r"
+alias rm="rm-r"
 
 # update suckless software
 alias update-dwm="cd $HOME/.config/suckless/dwm && sudo rm config.h && sudo make install"
-alias update-slstatus="cd $HOME/.config/suckless/slstatus && sudo rm config.h && sudo make install"
+alias update-slstatus="cd $HOME/.config/suckless/slstatus && sudo rm config.h && sudo make install && killall slstatus"
 alias update-dmenu="cd $HOME/.config/suckless/dmenu && sudo rm config.h && sudo make install"
+alias update-suckless="update-dwm && update-slstatus && update-dmenu"
 
 # vim mode
 bindkey -v
 
-HISTFILE=~/.histfile
+# history file
+HISTFILE=~/.config/zsh/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
+
 # run pfetch when start zsh
 pfetch
 
