@@ -3,7 +3,6 @@
 # plugins
 source ~/.config/zsh/plugins/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/.zsh/zsh-completions/zsh-completions.plugin.zsh
-
 # pywal colors
 cat /home/relow/.cache/wal/sequences
 
@@ -22,7 +21,9 @@ alias ll="lsd -ahl"
 alias n="nvim"
 alias c="clear"
 alias cp="cp -r"
-alias rm="rm-r"
+alias rm="rm -r"
+
+f() {du -a ~/bin/ ~/.config/ | awk '{print $2}' | fzf | xargs -r nvim;}
 
 # update suckless software
 alias update-dwm="cd $HOME/.config/suckless/dwm && sudo rm config.h && sudo make install"
