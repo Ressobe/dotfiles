@@ -1,8 +1,8 @@
 ###
 
 # plugins
-source ~/.config/zsh/plugins/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.config/zsh/plugins/.zsh/zsh-completions/zsh-completions.plugin.zsh
+source ~/.config/zsh/plugins/.zsh/zsh-auto/zsh-autosuggestions.zsh
+source ~/.config/zsh/plugins/.zsh/zsh-comp/zsh-completions.plugin.zsh
 # pywal colors
 cat /home/relow/.cache/wal/sequences
 
