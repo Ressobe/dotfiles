@@ -1,4 +1,6 @@
 
+# zsh dotfiles dir
+export ZDOTDIR="$HOME/.config/zsh"
 
 # pfetch variables
 export PF_INFO="ascii os kernel shell uptime pkgs wm editor memory"
@@ -8,7 +10,4 @@ export PF_COL3="1"
 export PF_SEP=""
 export PF_ASCII=""
 
-# zsh dotfiles dir
-export ZDOTDIR="$HOME/.config/zsh"
-
-
+export EDITOR="nvim"
