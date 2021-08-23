@@ -22,8 +22,10 @@ alias n="nvim"
 alias c="clear"
 alias cp="cp -r"
 alias rm="rm -r"
+alias p="pacman"
 
-f() {du -a ~/bin/ ~/.config/ | awk '{print $2}' | fzf | xargs -r nvim;}
+# fuzzy finder open file with neovim
+f() {du -a ~/  ~/bin/ | awk '{print $2}' | fzf | xargs -r nvim;}
 
 # update suckless software
 alias update-dwm="cd $HOME/.config/suckless/dwm && sudo rm config.h && sudo make install"

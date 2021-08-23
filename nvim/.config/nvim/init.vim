@@ -1,5 +1,6 @@
-source $HOME/.config/nvim/plug-config/coc.vim
+
 source $HOME/.config/nvim/plug-config/start-screen.vim
+source $HOME/.config/nvim/plug-config/airline.vim
 
 "Auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
@@ -15,6 +16,8 @@ call plug#begin('~/.config/nvim/autoload/plugged') "Install Plugins
      "Plug 'vim-airline/vim-airline-themes'  "Status line themes    
      Plug 'dylanaraps/wal.vim'               "Pywal theme
      Plug 'ryanoasis/vim-devicons'           "Icons
+     Plug 'liuchengxu/vim-which-key'
+     Plug 'junegunn/fzf.vim'
      Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
@@ -28,8 +31,4 @@ set formatoptions-=cro      "Stop newline continution of comments
 set clipboard=unnamedplus   "sudo pacman -S xclip
 let mapleader=" "           "Space my mapleader key
 
-"Status line configuration
-let g:airline#extensions#tabline#enabled =1 "Enable tabline
-let g:airline_powerline_fonts = 1 "Enable powerline fonts
-
-nmap <space>e :CocCommand explorer<CR>
+map <C-f> :Files<CR>
