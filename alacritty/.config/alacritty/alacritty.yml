@@ -1,6 +1,10 @@
 
+# Pywal color integration
+#import:
+#  - /home/relow/.cache/wal/colors.yml
+
 import:
-  - /home/relow/.cache/wal/colors.yml
+  - /home/relow/.config/alacritty/gruvbox.yml
 
 #Padding
 padding:

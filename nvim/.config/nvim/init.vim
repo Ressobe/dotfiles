@@ -1,5 +1,5 @@
 
-"Other config files
+"Other  plugins config files
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
@@ -15,25 +15,37 @@ call plug#begin('~/.config/nvim/autoload/plugged') "Install Plugins
      Plug 'jiangmiao/auto-pairs'             "Auto pairs for '(' '[' '{'
      Plug 'mhinz/vim-startify'               "Start screen
      Plug 'vim-airline/vim-airline'          "Status line
-     "Plug 'vim-airline/vim-airline-themes'  "Status line themes    
-     Plug 'dylanaraps/wal.vim'               "Pywal theme
+     Plug 'vim-airline/vim-airline-themes'   "Status line themes    
      Plug 'ryanoasis/vim-devicons'           "Icons
      Plug 'liuchengxu/vim-which-key'
      Plug 'junegunn/fzf.vim'
      Plug 'neoclide/coc.nvim', {'branch': 'release'}
+     "Themses
+     Plug 'morhetz/gruvbox'
+     Plug 'dracula/vim', { 'as': 'dracula' } 
+     Plug 'NLKNguyen/papercolor-theme'
+     Plug 'dylanaraps/wal.vim'               "Pywal theme
 call plug#end()
 
 "Settings
-colorscheme wal            "Color theme
-set encoding=UTF-8          "Enable icons
+set termguicolors           "Enable 24-bit RGB colors
+colorscheme gruvbox         "Color theme
 set background=dark         "Background
+set encoding=UTF-8          "Set standard encoding and enable icons
 set relativenumber          "Line numbers type
 set mouse=a                 "Enable mouse
 set formatoptions-=cro      "Stop newline continution of comments
-set clipboard=unnamedplus   "sudo pacman -S xclip
+set clipboard=unnamedplus   "Copy to system clipboard (need package xclip)
 let mapleader=" "           "Space my mapleader key
+let g:airline_theme ='gruvbox' "Airline theme 
 
-"Spawn fuzzy finder
+"Ctrl + f spawn fuzzy finder
 map <C-f> :Files<CR>
+"Ctrl + S save file
 map <C-s> :write<CR>
-map <C-o> :tabnew<CR>
+
+"Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
