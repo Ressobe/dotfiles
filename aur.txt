@@ -1,6 +1,0 @@
-brave-bin
-gotop
-nerd-fonts-complete
-paru
-pfetch
-tty-clock

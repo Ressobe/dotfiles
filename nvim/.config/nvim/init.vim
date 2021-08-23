@@ -1,6 +1,8 @@
 
+"Other config files
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/airline.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 
 "Auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
@@ -31,4 +33,7 @@ set formatoptions-=cro      "Stop newline continution of comments
 set clipboard=unnamedplus   "sudo pacman -S xclip
 let mapleader=" "           "Space my mapleader key
 
+"Spawn fuzzy finder
 map <C-f> :Files<CR>
+map <C-s> :write<CR>
+map <C-o> :tabnew<CR>
