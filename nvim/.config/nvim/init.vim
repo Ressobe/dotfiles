@@ -17,9 +17,10 @@ call plug#begin('~/.config/nvim/autoload/plugged') "Install Plugins
      Plug 'vim-airline/vim-airline'          "Status line
      Plug 'vim-airline/vim-airline-themes'   "Status line themes    
      Plug 'ryanoasis/vim-devicons'           "Icons
-     Plug 'liuchengxu/vim-which-key'
-     Plug 'junegunn/fzf.vim'
-     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+     Plug 'liuchengxu/vim-which-key'         "Show keybinds
+     Plug 'junegunn/fzf.vim'                 "Fuzzy file finder
+     Plug 'neoclide/coc.nvim', {'branch': 'release'}  "Coc
+     Plug 'preservim/nerdcommenter'
      "Themses
      Plug 'morhetz/gruvbox'
      Plug 'dracula/vim', { 'as': 'dracula' } 
@@ -37,6 +38,7 @@ set mouse=a                 "Enable mouse
 set formatoptions-=cro      "Stop newline continution of comments
 set clipboard=unnamedplus   "Copy to system clipboard (need package xclip)
 let mapleader=" "           "Space my mapleader key
+set scrolloff=10            "Minimal number of screen lines to keep above and below cursor
 
 "Ctrl + f spawn fuzzy finder
 map <C-f> :Files<CR>
