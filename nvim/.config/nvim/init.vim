@@ -37,12 +37,15 @@ set mouse=a                 "Enable mouse
 set formatoptions-=cro      "Stop newline continution of comments
 set clipboard=unnamedplus   "Copy to system clipboard (need package xclip)
 let mapleader=" "           "Space my mapleader key
-let g:airline_theme ='gruvbox' "Airline theme 
 
 "Ctrl + f spawn fuzzy finder
 map <C-f> :Files<CR>
+
 "Ctrl + S save file
-map <C-s> :write<CR>
+nmap <C-s> :write<CR>
+
+"Ctrl + x exit
+nmap <C-x> :quit<CR>
 
 "Disable arrow keys
 noremap <Up> <Nop>
