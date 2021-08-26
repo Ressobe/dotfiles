@@ -37,7 +37,7 @@ alias update-suckless="update-dwm && update-slstatus && update-dmenu"
 bindkey -v
 
 # history file
-HISTFILE=~/.config/zsh/.histfile
+HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
