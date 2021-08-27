@@ -61,3 +61,7 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+"Switch between panes in split
+map <C-j> <C-W>j
+map <C-h> <C-W>h
