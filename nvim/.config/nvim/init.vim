@@ -33,12 +33,13 @@ set termguicolors           "Enable 24-bit RGB colors
 colorscheme gruvbox         "Color theme
 set background=dark         "Background
 set encoding=UTF-8          "Set standard encoding and enable icons
-set relativenumber          "Line numbers type
+set number relativenumber   "Line numbers type
 set mouse=a                 "Enable mouse
 set formatoptions-=cro      "Stop newline continution of comments
 set clipboard=unnamedplus   "Copy to system clipboard (need packages xclip,gvim)
-set scrolloff=10            "Minimal number of screen lines to keep above and below cursor
+set scrolloff=8            "Minimal number of screen lines to keep above and below cursor
 set timeoutlen=600          "How long wait for another keystorke (ms)
+
 "Coc settings
 set nobackup
 set nowritebackup
@@ -46,18 +47,11 @@ set cmdheight=2
 set updatetime=300
 
 "NERDTree Keybinds
-nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
 "Ctrl + f spawn fuzzy finder
 map <C-f> :Files<CR>
-
-"Ctrl + S save file
-nmap <C-s> :write<CR>
-
-"Ctrl + x exit
-nmap <C-x> :quit<CR>
 
 "Show keybinds
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>

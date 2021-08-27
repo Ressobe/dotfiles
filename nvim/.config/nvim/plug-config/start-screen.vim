@@ -14,6 +14,7 @@ let g:startify_bookmarks = [
         \ { 's': '~/.config/suckless/slstatus/config.def.h' },
         \ { 'n': '~/.config/nvim/init.vim' },
         \ { 'a': '~/.config/alacritty/alacritty.yml' },
+        \ { 'g': '~/.gitconfig' },
         \]
 let g:startify_lists = [
           \ { 'type': 'sessions',  'header': ['   Sessions']       },
