@@ -1,20 +1,23 @@
-# Ressobefiles
+# Ressobe files
 
 
 ## Installing
 
-You will need `git` and GNU `stow`
+You will need GNU `stow`
 
-Clone into your `$HOME` directory or `~`
+Clone into your `$HOME` directory 
 
 ```bash
 git clone https://github.com/Ressobe/dotfiles ~
 ```
 
-Run `stow` to symlink everything or just select what you want
+Run `stow` to symlink everything 
 
 ```bash
 stow */ 
 ```
+or just select what you want
+```bash
 stow nvim
+```
 
