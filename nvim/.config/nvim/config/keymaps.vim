@@ -14,6 +14,11 @@ map <C-f> :Files<CR>
 " Quit vim
 map <C-x> :q<CR>
 
+" Buffers
+map <C-i> :bprev<CR>
+map <C-o> :bnext<CR>
+map <C-p> :bdelete<CR>
+
 " Ctrl + s save file
 nnoremap <C-s>      :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
@@ -23,6 +28,7 @@ nnoremap <Leader>s :Startify<CR>
 
 " Show keybinds
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
 " Disable arrow keys in normal mode
 noremap <Up> <Nop>
 noremap <Down> <Nop>
