@@ -4,7 +4,7 @@
 #  - /home/relow/.cache/wal/colors.yml
 
 import:
-  - /home/relow/.config/alacritty/gruvbox.yml
+  - /home/relow/.config/alacritty/dracula.yml
 
 #Padding
 padding:
@@ -17,8 +17,8 @@ font:
     # Font family
     family: monospace
     style: Regular
-  size: 13.6
+  size: 14.0
 
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.90
+background_opacity: 0.97
 
