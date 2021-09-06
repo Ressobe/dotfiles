@@ -13,7 +13,7 @@ setopt autocd
 autoload -U colors && colors
 
 # prompt
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b"
 
 # alias
 alias ls="lsd -h"
@@ -22,7 +22,6 @@ alias n="nvim"
 alias c="clear"
 alias cp="cp -r"
 alias rm="rm -r"
-alias p="pacman"
 
 # fuzzy finder open file with neovim
 f() {du -a ~/  ~/bin/ | awk '{print $2}' | fzf | xargs -r nvim;}

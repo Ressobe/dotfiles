@@ -17,3 +17,4 @@ set nowritebackup
 set cmdheight=1
 set updatetime=300
 set noerrorbells
+set smartcase
