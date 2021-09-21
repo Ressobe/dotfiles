@@ -5,5 +5,5 @@ source $HOME/.config/nvim/config/plug.vim
 source $HOME/.config/nvim/config/keymaps.vim
 source $HOME/.config/nvim/config/settings.vim
 source $HOME/.config/nvim/config/close-tag.vim
-" highlight Normal guibg=none
+highlight Normal guibg=none
 
