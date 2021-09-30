@@ -15,8 +15,7 @@ map <C-f> :Files<CR>
 map <C-x> :q<CR>
 
 " Buffers
-map <C-i> :bprev<CR>
-map <C-o> :bnext<CR>
+map <Tab> :bnext<CR>
 map <C-p> :bdelete<CR>
 
 " Ctrl + s save file

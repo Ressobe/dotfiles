@@ -6,6 +6,9 @@ source ~/.config/zsh/plugins/.zsh/zsh-comp/zsh-completions.plugin.zsh
 # pywal colors
 # cat /home/relow/.cache/wal/sequences
 
+# alias
+source ~/.config/zsh/alias.txt
+
 # automatically cd into typed directory
 setopt autocd	
 
@@ -15,13 +18,6 @@ autoload -U colors && colors
 # prompt
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} %b"
 
-# alias
-alias ls="lsd -h"
-alias ll="lsd -ahl"
-alias n="nvim"
-alias c="clear"
-alias cp="cp -r"
-alias rm="rm -r"
 
 # fuzzy finder open file with neovim
 f() {du -a ~/  ~/bin/ | awk '{print $2}' | fzf | xargs -r nvim;}

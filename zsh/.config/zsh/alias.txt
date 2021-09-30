@@ -1,0 +1,8 @@
+# alias
+alias ls="lsd -h"
+alias ll="lsd -ahl"
+alias n="nvim"
+alias c="clear"
+alias cp="cp -ri"
+alias rm="rm -r"
+alias p="python main.py"
