@@ -1,5 +1,5 @@
 " Settings
-colorscheme one       
+colorscheme dracula       
 set termguicolors      
 set background=dark     
 set encoding=UTF-8       

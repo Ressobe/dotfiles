@@ -4,7 +4,7 @@
 #  - /home/relow/.cache/wal/colors.yml
 
 import:
-  - /home/relow/.config/alacritty/one.yml
+  - /home/relow/.config/alacritty/dracula.yml
 
 #Padding
 padding:
@@ -19,5 +19,5 @@ font:
     style: Regular
   size: 11
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.90
+background_opacity: 1.0
 

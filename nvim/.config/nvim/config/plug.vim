@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
      Plug 'turbio/bracey.vim'
      "Themses
      Plug 'morhetz/gruvbox'
+     Plug 'dracula/vim', { 'as': 'dracula' }
      Plug 'rakr/vim-one'
      Plug 'dylanaraps/wal.vim'               
 call plug#end()
