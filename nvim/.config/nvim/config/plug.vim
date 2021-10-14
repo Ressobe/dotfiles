@@ -20,11 +20,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
      Plug 'alvan/vim-closetag'
      Plug 'tpope/vim-surround'
      Plug 'farmergreg/vim-lastplace'
-     Plug 'turbio/bracey.vim'
+     Plug 'dense-analysis/ale'
      "Themses
-     Plug 'morhetz/gruvbox'
      Plug 'dracula/vim', { 'as': 'dracula' }
-     Plug 'rakr/vim-one'
      Plug 'dylanaraps/wal.vim'               
 call plug#end()
 
