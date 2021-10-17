@@ -14,13 +14,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
      Plug 'ap/vim-css-color'
      Plug 'alvan/vim-closetag'
      Plug 'dense-analysis/ale'
-     Plug 'ryanoasis/vim-devicons'
      Plug 'neovim/nvim-lspconfig'
      Plug 'nvim-lua/completion-nvim'
      Plug 'glepnir/lspsaga.nvim'
      Plug 'hrsh7th/nvim-compe'
      Plug 'sheerun/vim-polyglot'
      Plug 'morhetz/gruvbox'
-     Plug 'hoob3rt/lualine.nvim'
 call plug#end()
 
