@@ -4,7 +4,7 @@
 #  - /home/relow/.cache/wal/colors.yml
 
 import:
-  - /home/relow/.config/alacritty/dracula.yml
+  - /home/relow/.config/alacritty/gruvbox.yml
 
 #Padding
 padding:
