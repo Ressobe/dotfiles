@@ -1,4 +1,3 @@
-" Settings
 colorscheme gruvbox
 set termguicolors
 set background=dark
@@ -19,6 +18,7 @@ set cmdheight=1
 set updatetime=300
 set noerrorbells
 set smartcase
-let g:ale_linters = {'python': ['flake8'], 'c': ['ccls']}
-let g:ale_fixers = {'*' : ['trim_whitespace'], 'python': ['black']}
-
+set winblend=0
+set pumblend=5
+set wildoptions=pum
+hi Normal guibg=NONE ctermbg=NONE

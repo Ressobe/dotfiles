@@ -1,8 +1,6 @@
 " Space my mapleader key
 let mapleader=" "           
 
-" Comments
-nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
 
 " NERDTree Keybinds
 nnoremap <C-n> :NERDTree<CR>
@@ -25,8 +23,6 @@ inoremap <C-s> <Esc>:w<CR>a
 " Startify screen
 nnoremap <Leader>s :Startify<CR>
 
-" Show keybinds
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
 " Disable arrow keys in normal mode
 noremap <Up> <Nop>
@@ -34,7 +30,7 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-" Switch between panes in split
+" Switch in split
 map <C-j> <C-W>j
 map <C-h> <C-W>h
 map <C-k> <C-W>k

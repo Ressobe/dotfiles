@@ -1,9 +1,7 @@
-source $HOME/.config/nvim/config/airline.vim
-source $HOME/.config/nvim/config/start-screen.vim
-source $HOME/.config/nvim/config/plug.vim
-source $HOME/.config/nvim/config/keymaps.vim
-source $HOME/.config/nvim/config/settings.vim
-source $HOME/.config/nvim/config/close-tag.vim
-source $HOME/.config/nvim/config/lsp-config.vim
-luafile $HOME/.config/nvim/config/compe-config.lua
-luafile $HOME/.config/nvim/config/python-ls.lua
+source $HOME/.config/nvim/plugins/airline.vim
+source $HOME/.config/nvim/plugins/start-screen.vim
+source $HOME/.config/nvim/plug.vim
+source $HOME/.config/nvim/plugins/keymaps.vim
+source $HOME/.config/nvim/plugins/settings.vim
+source $HOME/.config/nvim/plugins/close-tag.vim
+source $HOME/.config/nvim/plugins/ale.vim
