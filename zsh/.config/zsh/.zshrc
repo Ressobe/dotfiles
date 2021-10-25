@@ -1,5 +1,3 @@
-###
-
 # plugins
 source ~/.config/zsh/plugins/.zsh/zsh-auto/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/.zsh/zsh-comp/zsh-completions.plugin.zsh

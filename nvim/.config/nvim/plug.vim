@@ -18,6 +18,6 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'liuchengxu/vim-clap'
-" Plug 'glepnir/dashboard-nvim'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
