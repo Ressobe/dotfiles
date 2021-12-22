@@ -34,5 +34,3 @@ setopt appendhistory
 
 # run pfetch when start zsh
 pfetch
-
-

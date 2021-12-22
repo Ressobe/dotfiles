@@ -1,5 +1,5 @@
 import:
-  - /home/relow/.config/alacritty/themes/solarized.yml
+  - /home/relow/.config/alacritty/themes/one.yml
 
 window:
   padding:
@@ -8,8 +8,9 @@ window:
 
 font:
   normal:
-    family: Hack Nerd Font
+    family: Hack Nerd Font 
+    # family: Source Code Pro
     style: Regular
-  size: 13
+  size: 11
 
-background_opacity: 0.95
+background_opacity: 1.0
