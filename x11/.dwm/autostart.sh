@@ -1,6 +1,8 @@
 wal -R &
 slstatus &
 dunst &
-picom &
-sudo xbacklight -set 30 &
+picom --experimental-backends &
+sudo xbacklight -set 20 &
 xset r rate 300 50 &
+xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.1 &
+emacs --daemon &

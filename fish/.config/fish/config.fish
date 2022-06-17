@@ -1,6 +1,6 @@
-function fish_greeting
-    pfetch
-end
+# function fish_greeting
+# cat ~/.cache/wal/sequences
+#end
 
 function fish_prompt
         set_color red --bold
@@ -26,19 +26,27 @@ function fish_user_key_bindings
 end
 
 abbr n "nvim"
+
 abbr ls "exa --icons "
 abbr l "exa --icons "
 abbr ll "exa --icons --git -ahl"
 abbr lt "exa --tree"
+
 abbr g "git"
 abbr .3 "../../.."
-abbr update "sudo pacman -Syu"
+
+abbr update "sudo pacman -Syu --noconfirm"
 abbr install "sudo pacman -S"
+abbr remove "sudo pacman -Rns"
+
 abbr s "startx"
 abbr ss "sudo systemctl"
+
 alias rm "rm -v"
 alias cp "cp -v"
 alias mv "mv -v"
 
+alias todo "python /home/relow/programy/to_do_app/app.py"
+
 set -gx EDITOR nvim
-set -gx PF_INFO "os kernel shell uptime pkgs wm editor memory"
+set -gx PF_INFO "ascii os kernel shell uptime pkgs wm editor memory"
