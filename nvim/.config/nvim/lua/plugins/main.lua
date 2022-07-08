@@ -57,13 +57,13 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "folke/which-key.nvim"
   use 'xiyaowong/nvim-transparent'
-  use 'p00f/nvim-ts-rainbow'
-
   use 'mattn/emmet-vim'
   use 'turbio/bracey.vim'
+  use 'nvim-treesitter/nvim-treesitter'
 
   -- Colorschemes
   use 'joshdick/onedark.vim'
+  use 'ayu-theme/ayu-vim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -81,18 +81,10 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
-  -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  }
-
-  use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Git
   use "lewis6991/gitsigns.nvim"

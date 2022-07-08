@@ -9,7 +9,7 @@ local options = {
   ignorecase = true,                       -- ignore case in search patterns
   mouse = "a",                             -- allow the mouse to be used in neovim
   pumheight = 10,                          -- pop up menu height
-  showmode = true,                        -- we don't need to see things like -- INSERT -- anymore
+  showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2,                         -- always show tabs
   smartcase = true,                        -- smart case
   smartindent = true,                      -- make indenting smarter again
@@ -23,7 +23,7 @@ local options = {
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
   expandtab = false,                        -- convert tabs to spaces
   shiftwidth = 2,                          -- the number of spaces inserted for each indentation
-  tabstop = 2,                             -- insert 2 spaces for a tab
+  tabstop = 4,                             -- insert 2 spaces for a tab
   cursorline = false,                       -- highlight the current line
   number = true,                           -- set numbered lines
   relativenumber = true,                  -- set relative numbered lines
@@ -32,8 +32,7 @@ local options = {
   wrap = true,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
-  guicursor = "i:block",
+  guifont = "hacknerdfont:h17",               -- the font used in graphical neovim applications
 }
 
 vim.opt.shortmess:append "c"
@@ -44,4 +43,3 @@ end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
