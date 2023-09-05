@@ -23,8 +23,6 @@ require("lazy").setup({
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
 
-      -- Useful status updates for LSP
-      -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -50,6 +48,10 @@ require("lazy").setup({
     },
   },
 
+  'nvimdev/lspsaga.nvim',
+
+  'L3MON4D3/LuaSnip',
+
   {
     'nvim-telescope/telescope.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' }
@@ -72,7 +74,11 @@ require("lazy").setup({
   "folke/zen-mode.nvim",
 
 
-  { 'numToStr/Comment.nvim', opts = {} },
+  {
+    'numToStr/Comment.nvim',
+    lazy = false,
+    dependencies = { 'JoosepAlviste/nvim-ts-context-commentstring' }
+  },
 
   'xiyaowong/transparent.nvim',
 
