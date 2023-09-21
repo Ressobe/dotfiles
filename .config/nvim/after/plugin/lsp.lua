@@ -1,4 +1,6 @@
 --vim.lsp.set_log_level("debug")
+--
+require("mason-lspconfig").setup()
 
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then return end
@@ -84,12 +86,18 @@ nvim_lsp.tailwindcss.setup {
   capabilities = capabilities
 }
 
+
 nvim_lsp.cssls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
 nvim_lsp.astro.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+nvim_lsp.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
@@ -102,6 +110,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     severity_sort = true,
   }
 )
+
 
 -- Diagnostic symbols in the sign column (gutter)
 local signs = { Error = " ", Warn = " ", Hint = "", Info = " " }

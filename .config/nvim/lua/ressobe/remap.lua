@@ -16,7 +16,6 @@ keymap.set('n', '<leader>c', ':close<CR>')
 keymap.set('n', '<leader>q', ':q<CR>')
 
 -- Open dashboard
-keymap.set('n', '<A-d>', ':Dashboard<CR>')
 
 -- Window split
 keymap.set('n', 'ss', ':split<CR><C-w>w', { silent = true })
