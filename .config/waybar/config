@@ -1,7 +1,7 @@
 {
   "modules-left": [
   "custom/launcher",
-  "wlr/workspaces",
+  "hyprland/workspaces",
   ],
   "modules-center": [
     "clock",
