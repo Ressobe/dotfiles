@@ -49,4 +49,6 @@ keymap.set('v', '>', '>gv')
 -- Lazy packer manager
 keymap.set('n', '<leader>p', ':Lazy<CR>')
 
-keymap.set('n', '<leader>;', ':Dashboard<CR>');
+
+keymap.set('n', '<C-d>', '<C-d>zz')
+keymap.set('n', '<C-u>', '<C-u>zz')
