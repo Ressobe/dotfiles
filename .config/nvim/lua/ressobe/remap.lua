@@ -2,12 +2,17 @@ local keymap = vim.keymap
 
 -- Leader key
 vim.g.mapleader = " "
+vim.g.maplocalleader = "."
 
 -- Window navigation
 keymap.set('n', '<C-h>', '<C-w>h')
 keymap.set('n', '<C-j>', '<C-w>j')
 keymap.set('n', '<C-k>', '<C-w>k')
 keymap.set('n', '<C-l>', '<C-w>l')
+
+-- Save file
+keymap.set('n', '<leader>w', ':w<CR>')
+keymap.set('n', '<leader>wq', ':wq<CR>')
 
 -- Close window
 keymap.set('n', '<leader>c', ':close<CR>')
