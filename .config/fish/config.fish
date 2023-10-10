@@ -40,6 +40,7 @@ abbr cat "bat"
 
 abbr g "git"
 abbr gs "git status"
+abbr gp "git pull"
 abbr .3 "../../.."
 
 abbr update "sudo pacman -Syu --noconfirm"
