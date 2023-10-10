@@ -4,14 +4,14 @@
   "hyprland/workspaces",
   ],
   "modules-center": [
-    "clock",
+    "cpu",
+    "memory",
+    "battery",
   ],
   "modules-right": [
     "pulseaudio",
-    "cpu",
-    "memory",
     "network",
-    "battery",
+    "clock",
     "custom/powermenu",
   ],
   "custom/launcher": {

@@ -1,7 +1,7 @@
 * {
   font-family: "Hack Nerd Font";
   font-size: 11pt;
-  font-weight: bold;
+  font-weight: normal;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -24,29 +24,24 @@
 }
 
 window#waybar {
-  background-color: transparent;
+  background-color: rgba(26, 27, 38, 0.5);
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 window > box {
-  /* background-color: rgb(30, 30, 46); */
-  background-color: #090300;
+  background-color: rgba(1, 6, 14, 0.5);
   padding: 4px;
-  margin-top: 10px;
-  margin-left: 8px;
-  margin-right: 8px;
-  border-radius: 6px;
+  padding: 2px;
 }
 
 #workspaces {
-  padding-left: 0px;
-  padding-right: 4px;
+  padding: 2px 4px 2px 4px;
+  border-radius: 2px;
 }
 
 #workspaces button {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 5px 6px 5px 6px;
 }
 
 #workspaces button.active {
@@ -71,8 +66,7 @@ tooltip label {
 }
 
 #custom-launcher {
-  margin-left: 15px;
-  margin-right: 25px;
+  margin: 0 25px 0 15px;
   color: rgb(201, 203, 255);
 }
 
