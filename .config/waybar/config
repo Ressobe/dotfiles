@@ -1,18 +1,16 @@
 {
   "modules-left": [
-  "custom/launcher",
   "hyprland/workspaces",
   ],
   "modules-center": [
-    "cpu",
-    "memory",
-    "battery",
   ],
   "modules-right": [
+    "cpu",
+    "memory",
     "pulseaudio",
     "network",
+    "battery",
     "clock",
-    "custom/powermenu",
   ],
   "custom/launcher": {
     "format": "",
@@ -69,7 +67,7 @@
   },
   "network": {
     "interval": 1,
-    "format-wifi": "  {essid}",
+    "format-wifi": "  {signalStrength}%",
     "format-ethernet": "  {ifname} ({ipaddr})",
     "format-linked": " {essid} (No IP)",
     "format-disconnected": " Disconnected",
