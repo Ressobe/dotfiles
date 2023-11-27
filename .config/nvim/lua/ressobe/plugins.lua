@@ -101,14 +101,7 @@ require("lazy").setup({
     end
   },
 
-  {
-    'lukas-reineke/indent-blankline.nvim',
-    opts = {
-      char = '┊',
-      show_trailing_blankline_indent = false,
-      filetype_exclude = { "dashboard" },
-    },
-  },
+  'lukas-reineke/indent-blankline.nvim',
 
   'onsails/lspkind.nvim',
 
