@@ -1,13 +1,13 @@
 {
   "modules-left": [
-  "hyprland/workspaces",
-  ],
-  "modules-center": [
-  ],
-  "modules-right": [
     "cpu",
     "memory",
     "pulseaudio",
+  ],
+  "modules-center": [
+    "hyprland/window",
+  ],
+  "modules-right": [
     "network",
     "battery",
     "clock",
