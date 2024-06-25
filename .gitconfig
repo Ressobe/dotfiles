@@ -7,7 +7,7 @@
 [core]
   editor = nvim
 [url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
+ insteadOf = https://github.com/
 [push]
   default = simple
 [alias]
@@ -18,3 +18,4 @@
   ps = push
   pl = pull
   br = branch
+
