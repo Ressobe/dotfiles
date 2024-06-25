@@ -3,7 +3,7 @@
 #end
 #
 function fish_greeting
-  #  pfetch
+  #   pfetch
 end
 
 function fish_prompt
@@ -30,13 +30,14 @@ function fish_user_key_bindings
 end
 
 abbr n "nvim"
-abbr vim "nvim"
+# abbr vim "nvim"
 abbr ls "eza --icons "
 abbr l "eza --icons "
 abbr ll "eza --icons -ahl"
 abbr lt "eza --tree"
 
 abbr cat "bat"
+abbr cd "z"
 
 abbr g "git"
 abbr gs "git status"
@@ -55,3 +56,9 @@ alias cp "cp -v"
 alias mv "mv -v"
 alias tl "taskline"
 alias config "git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
+zoxide init fish | source
