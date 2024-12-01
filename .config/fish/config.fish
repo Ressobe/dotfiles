@@ -13,7 +13,6 @@ function fish_prompt
     # Git branch
     set -l git_branch ""
     set git_branch (git branch --show-current 2>/dev/null)
-    set -l current_dir (basename $PWD)
 
     # Build prompt
     set_color red --bold
@@ -27,7 +26,7 @@ function fish_prompt
     #printf "%s" "$hostname"
 
     set_color magenta
-    printf "%s" "$current_dir"
+    printf "%s" "$PWD"
 
     if test -n "$git_branch"
         set_color cyan
