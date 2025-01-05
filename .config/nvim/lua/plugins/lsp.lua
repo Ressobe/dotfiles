@@ -143,9 +143,9 @@ return {
         if opts.inlay_hints.enabled then
           LazyVim.lsp.on_supports_method("textDocument/inlayHint", function(client, buffer)
             if
-              vim.api.nvim_buf_is_valid(buffer)
-              and vim.bo[buffer].buftype == ""
-              and not vim.tbl_contains(opts.inlay_hints.exclude, vim.bo[buffer].filetype)
+                vim.api.nvim_buf_is_valid(buffer)
+                and vim.bo[buffer].buftype == ""
+                and not vim.tbl_contains(opts.inlay_hints.exclude, vim.bo[buffer].filetype)
             then
               vim.lsp.inlay_hint.enable(true, { bufnr = buffer })
             end
@@ -166,14 +166,14 @@ return {
 
       if type(opts.diagnostics.virtual_text) == "table" and opts.diagnostics.virtual_text.prefix == "icons" then
         opts.diagnostics.virtual_text.prefix = vim.fn.has("nvim-0.10.0") == 0 and "●"
-          or function(diagnostic)
-            local icons = LazyVim.config.icons.diagnostics
-            for d, icon in pairs(icons) do
-              if diagnostic.severity == vim.diagnostic.severity[d:upper()] then
-                return icon
+            or function(diagnostic)
+              local icons = LazyVim.config.icons.diagnostics
+              for d, icon in pairs(icons) do
+                if diagnostic.severity == vim.diagnostic.severity[d:upper()] then
+                  return icon
+                end
               end
             end
-          end
       end
 
       vim.diagnostic.config(vim.deepcopy(opts.diagnostics))
@@ -260,7 +260,7 @@ return {
     event = "InsertEnter",
     dependencies = {
       "hrsh7th/cmp-buffer", -- source for text in buffer
-      "hrsh7th/cmp-path", -- source for file system paths
+      "hrsh7th/cmp-path",   -- source for file system paths
       {
         "L3MON4D3/LuaSnip",
         -- follow latest release.
@@ -268,9 +268,9 @@ return {
         -- install jsregexp (optional!).
         build = "make install_jsregexp",
       },
-      "saadparwaiz1/cmp_luasnip", -- for autocompletion
+      "saadparwaiz1/cmp_luasnip",     -- for autocompletion
       "rafamadriz/friendly-snippets", -- useful snippets
-      "onsails/lspkind.nvim", -- vs-code like pictograms
+      "onsails/lspkind.nvim",         -- vs-code like pictograms
     },
     config = function()
       local cmp = require("cmp")
@@ -334,6 +334,7 @@ return {
           }),
         },
 
+
         window = {
           completion = {
             -- border = {
@@ -369,8 +370,8 @@ return {
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
           { name = "luasnip" }, -- snippets
-          { name = "buffer" }, -- text within current buffer
-          { name = "path" }, -- file system paths
+          { name = "buffer" },  -- text within current buffer
+          { name = "path" },    -- file system paths
         }),
 
         -- configure lspkind for vs-code like pictograms in completion menu
