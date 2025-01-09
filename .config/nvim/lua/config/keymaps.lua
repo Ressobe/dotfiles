@@ -169,18 +169,11 @@ map("n", "<c-_>", function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end,
 map("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 map("t", "<c-_>", "<cmd>close<cr>", { desc = "which_key_ignore" })
 
--- windows
-map("n", "<leader>w", "<c-w>", { desc = "Windows", remap = true })
-map("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
-map("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
-map("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
-
-
 map("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically", remap = true })
 map("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally", remap = true })
 map("n", "<leader>se", "<C-w>=", { desc = "Equalize split windows", remap = true })
 map("n", "<leader>x", "<cmd>close<CR>", { desc = "Close window" })
-LazyVim.ui.maximize():map("<leader>wm")
+-- LazyVim.ui.maximize():map("<leader>wm")
 
 -- tabs
 map("n", "<leader><tab>l", "<cmd>tablast<cr>", { desc = "Last Tab" })
