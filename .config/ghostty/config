@@ -1,0 +1,29 @@
+
+# theme = Operator Mono Dark
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = none
+confirm-close-surface = false
+
+palette = 0=#3B3F51
+palette = 1=#F44747
+palette = 2=#4EC9B0
+palette = 3=#DCDCAA
+palette = 4=#569CD6
+palette = 5=#C586C0
+palette = 6=#9CDCFE
+palette = 7=#D4D4D4
+palette = 8=#5A5E73
+palette = 9=#D16969
+palette = 10=#4FC1FF
+palette = 11=#E5C07B
+palette = 12=#61AFEF
+palette = 13=#D55FDE
+palette = 14=#56B6C2
+palette = 15=#E6E6E6
+background = #1E1E1E
+foreground = #D4D4D4
+cursor-color = #AEAFAD
+cursor-text = #1E1E1E
+selection-background = #264F78
+selection-foreground = #D4D4D4
