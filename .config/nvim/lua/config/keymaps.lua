@@ -149,6 +149,8 @@ if vim.fn.executable("lazygit") == 1 then
   map("n", "<leader>gL", function() Snacks.lazygit.log() end, { desc = "Lazygit Log (cwd)" })
 end
 
+map('n', '<leader>u', "<cmd>UndotreeToggle<cr>", { desc = "Toggle undo tree" })
+
 -- quit
 map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 
@@ -173,7 +175,6 @@ map("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically", remap = tru
 map("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally", remap = true })
 map("n", "<leader>se", "<C-w>=", { desc = "Equalize split windows", remap = true })
 map("n", "<leader>x", "<cmd>close<CR>", { desc = "Close window" })
--- LazyVim.ui.maximize():map("<leader>wm")
 
 -- tabs
 map("n", "<leader><tab>l", "<cmd>tablast<cr>", { desc = "Last Tab" })

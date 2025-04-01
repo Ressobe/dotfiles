@@ -59,12 +59,22 @@ return {
     -- experimental signature help support
     -- signature = { enabled = true },
 
-    sources = {
-      -- adding any nvim-cmp sources here will enable them
-      -- with blink.compat
-      compat = {},
-      default = { "lsp", "path", "buffer" },
-      cmdline = {},
+    cmdline = {
+      sources = {
+        -- adding any nvim-cmp sources here will enable them
+        -- with blink.compat
+        compat = {},
+        default = { "lsp", "path", "buffer", "easy-dotnet" },
+        providers = {
+          ["easy-dotnet"] = {
+            name = "easy-dotnet",
+            enabled = true,
+            module = "easy-dotnet.completion.blink",
+            score_offset = 10000,
+            async = true,
+          },
+        },
+      },
     },
 
     keymap = {
